@@ -1,0 +1,5 @@
+# Folders to ignore
+raw_data/
+raw_data_test/
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*:
