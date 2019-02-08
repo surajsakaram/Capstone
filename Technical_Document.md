@@ -39,10 +39,15 @@ For our purposes, let $(x_{i}, y_{i})^{n}_{i = 1}$ be a collection of n observat
 
 Put simply, the rows should be the samples with the columns as the miRNA. The values of the matrix represent the expression level of a given miRNA in a given sample. Each sample would have its associated tumor diagnosis.
 
+Below is an example of how the dataset should appear:
+
+![Working dataset](./images/dataset.png)
+
 Later, in the modeling phase, the tumor type will be the target value to predict based on the gene expression data.
 
 ## Part 4: Classification modeling
 
+To build a classification model that could predict the tumor diagnosis, the working dataset 
 
 
 ## Part 5: Model Evaluation and Insights
