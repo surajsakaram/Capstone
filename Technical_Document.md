@@ -45,8 +45,6 @@ Later, in the modeling phase, the tumor type will be the target value to predict
 
 
 
-
-
 ## Part 5: Model Evaluation and Insights
 
 
