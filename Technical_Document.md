@@ -35,7 +35,7 @@ Create a directory to house the data dump and run the following command to downl
 
 In order to construct a working dataset from the datafiles obtained from the GDC repository, we need to extract each the miRNA expression data from each file and assemble it into a working dataset with its associated tumor classification. In our case, we will be using the Project ID as assigned by TCGA to denote the cancer classification as the Project ID represents data that's derived from the respective cancer type. 
 
-For our purposes, let $(x_{i}, y_{i})^{n}_{i = 1}$ be a collection of n observations, where $x_{i}$ is a vector consisting of the expression levels of $m$ genes for the $i$-th observation, and $y_{i}$ is the class label or tumor type of the $i$-th observation, $i = 1, ..., n$.
+For our purposes, let ![]('./images/xy.svg') be a collection of n observations, where $x_{i}$ is a vector consisting of the expression levels of $m$ genes for the $i$-th observation, and $y_{i}$ is the class label or tumor type of the $i$-th observation, $i = 1, ..., n$.
 
 Put simply, the rows should be the samples with the columns as the miRNA. The values of the matrix represent the expression level of a given miRNA in a given sample. Each sample would have its associated tumor diagnosis.
 
@@ -48,6 +48,9 @@ In the modeling phase, the Project ID which serves as the tumor class will be th
 ## Part 4: Classification modeling
 
 To build a classification model that can predict the tumor diagnosis, the working dataset described above is split into a train and test dataset where the train dataset is used to train the model. Once the model has been trained, it will be given the test dataset (data it has not yet seen) and scored on how accurately it predicts the tumor class. Accuracy scores will be the primary metric in determining the performance of the model. 
+
+The baseline assumption: will be hard to classify cancer types
+
 
 For our purposes, we will test various supervised learning models: Logistic Regression, Random Forest, and ExtraTrees. As well, we will train a neural network to predict tumor class. PCA analysis will be used to reduce the dimensionality of the dataset. 
 
